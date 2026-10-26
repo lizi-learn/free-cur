@@ -1,0 +1,363 @@
+{
+  "revision": "task-keyframes-v2",
+  "tool": "built-in image_gen",
+  "character": "嘉然 / A-SOUL",
+  "created": "2026-10-19",
+  "roles": [
+    "Hand",
+    "Wait",
+    "No",
+    "IBeam",
+    "SizeWE",
+    "SizeNS",
+    "SizeNWSE",
+    "SizeNESW",
+    "Help",
+    "NWPen",
+    "SizeAll",
+    "AppStarting"
+  ],
+  "keyframes_per_role": 4,
+  "palette_limit": 32,
+  "baseline": 46,
+  "processing": "equal grid crop, connected-component cleanup, nearest-neighbor 44px into 48px canvas, feet anchor alignment, shared median-cut palette (31 opaque + transparent), hard alpha",
+  "scope": "AI-assisted fan reinterpretation; original character rights remain with their owners. Not official art.",
+  "alignment": [
+    {
+      "role": "Hand",
+      "frame": 0,
+      "dx": 0,
+      "dy": 4,
+      "baseline": 46
+    },
+    {
+      "role": "Hand",
+      "frame": 1,
+      "dx": 0,
+      "dy": 4,
+      "baseline": 46
+    },
+    {
+      "role": "Hand",
+      "frame": 2,
+      "dx": 0,
+      "dy": 4,
+      "baseline": 46
+    },
+    {
+      "role": "Hand",
+      "frame": 3,
+      "dx": 1,
+      "dy": 4,
+      "baseline": 46
+    },
+    {
+      "role": "Wait",
+      "frame": 0,
+      "dx": -1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "Wait",
+      "frame": 1,
+      "dx": -1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "Wait",
+      "frame": 2,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "Wait",
+      "frame": 3,
+      "dx": 0,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "No",
+      "frame": 0,
+      "dx": 1,
+      "dy": 8,
+      "baseline": 46
+    },
+    {
+      "role": "No",
+      "frame": 1,
+      "dx": 0,
+      "dy": 8,
+      "baseline": 46
+    },
+    {
+      "role": "No",
+      "frame": 2,
+      "dx": 2,
+      "dy": 8,
+      "baseline": 46
+    },
+    {
+      "role": "No",
+      "frame": 3,
+      "dx": 3,
+      "dy": 8,
+      "baseline": 46
+    },
+    {
+      "role": "IBeam",
+      "frame": 0,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "IBeam",
+      "frame": 1,
+      "dx": 0,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "IBeam",
+      "frame": 2,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "IBeam",
+      "frame": 3,
+      "dx": 2,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeWE",
+      "frame": 0,
+      "dx": 1,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeWE",
+      "frame": 1,
+      "dx": 3,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeWE",
+      "frame": 2,
+      "dx": 4,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeWE",
+      "frame": 3,
+      "dx": 3,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNS",
+      "frame": 0,
+      "dx": 1,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNS",
+      "frame": 1,
+      "dx": 3,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNS",
+      "frame": 2,
+      "dx": 4,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNS",
+      "frame": 3,
+      "dx": 3,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNWSE",
+      "frame": 0,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNWSE",
+      "frame": 1,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNWSE",
+      "frame": 2,
+      "dx": 2,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNWSE",
+      "frame": 3,
+      "dx": 2,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNESW",
+      "frame": 0,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNESW",
+      "frame": 1,
+      "dx": 2,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNESW",
+      "frame": 2,
+      "dx": 3,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeNESW",
+      "frame": 3,
+      "dx": 1,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "Help",
+      "frame": 0,
+      "dx": -1,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "Help",
+      "frame": 1,
+      "dx": -1,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "Help",
+      "frame": 2,
+      "dx": 0,
+      "dy": 4,
+      "baseline": 46
+    },
+    {
+      "role": "Help",
+      "frame": 3,
+      "dx": 1,
+      "dy": 5,
+      "baseline": 46
+    },
+    {
+      "role": "NWPen",
+      "frame": 0,
+      "dx": 1,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "NWPen",
+      "frame": 1,
+      "dx": 0,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "NWPen",
+      "frame": 2,
+      "dx": 1,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "NWPen",
+      "frame": 3,
+      "dx": 1,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "SizeAll",
+      "frame": 0,
+      "dx": 0,
+      "dy": 7,
+      "baseline": 46
+    },
+    {
+      "role": "SizeAll",
+      "frame": 1,
+      "dx": 1,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "SizeAll",
+      "frame": 2,
+      "dx": 0,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "SizeAll",
+      "frame": 3,
+      "dx": 2,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "AppStarting",
+      "frame": 0,
+      "dx": 1,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "AppStarting",
+      "frame": 1,
+      "dx": 0,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "AppStarting",
+      "frame": 2,
+      "dx": 1,
+      "dy": 6,
+      "baseline": 46
+    },
+    {
+      "role": "AppStarting",
+      "frame": 3,
+      "dx": 0,
+      "dy": 6,
+      "baseline": 46
+    }
+  ]
+}

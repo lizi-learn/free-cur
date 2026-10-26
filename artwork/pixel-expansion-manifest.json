@@ -1,0 +1,125 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-19",
+  "characters": [
+    {
+      "id": "ava",
+      "name": "向晚 / A-SOUL",
+      "source": "pixel-ava/source-sheet.png",
+      "prompt": "pixel-ava/prompt.txt",
+      "provenance": "pixel-ava/provenance.json"
+    },
+    {
+      "id": "bella",
+      "name": "贝拉 / A-SOUL",
+      "source": "pixel-bella/source-sheet.png",
+      "prompt": "pixel-bella/prompt.txt",
+      "provenance": "pixel-bella/provenance.json"
+    },
+    {
+      "id": "fiona",
+      "name": "心宜 / A-SOUL",
+      "source": "pixel-fiona/source-sheet.png",
+      "prompt": "pixel-fiona/prompt.txt",
+      "provenance": "pixel-fiona/provenance.json"
+    },
+    {
+      "id": "eileen",
+      "name": "乃琳 / A-SOUL",
+      "source": "pixel-eileen/source-sheet.png",
+      "prompt": "pixel-eileen/prompt.txt",
+      "provenance": "pixel-eileen/provenance.json"
+    },
+    {
+      "id": "carol",
+      "name": "珈乐 / A-SOUL",
+      "source": "pixel-carol/source-sheet.png",
+      "prompt": "pixel-carol/prompt.txt",
+      "provenance": "pixel-carol/provenance.json"
+    },
+    {
+      "id": "snow",
+      "name": "思诺 / A-SOUL",
+      "source": "pixel-snow/source-sheet.png",
+      "prompt": "pixel-snow/prompt.txt",
+      "provenance": "pixel-snow/provenance.json"
+    },
+    {
+      "id": "luyou",
+      "name": "露早 / EOE",
+      "source": "pixel-luyou/source-sheet.png",
+      "prompt": "pixel-luyou/prompt.txt",
+      "provenance": "pixel-luyou/provenance.json"
+    },
+    {
+      "id": "youn",
+      "name": "柚恩 / EOE",
+      "source": "pixel-youn/source-sheet.png",
+      "prompt": "pixel-youn/prompt.txt",
+      "provenance": "pixel-youn/provenance.json"
+    },
+    {
+      "id": "mino",
+      "name": "米诺 / EOE",
+      "source": "pixel-mino/source-sheet.png",
+      "prompt": "pixel-mino/prompt.txt",
+      "provenance": "pixel-mino/provenance.json"
+    },
+    {
+      "id": "yumo",
+      "name": "虞莫 / EOE",
+      "source": "pixel-yumo/source-sheet.png",
+      "prompt": "pixel-yumo/prompt.txt",
+      "provenance": "pixel-yumo/provenance.json"
+    },
+    {
+      "id": "xing-tong",
+      "name": "星瞳",
+      "source": "pixel-xing-tong/source-sheet.png",
+      "prompt": "pixel-xing-tong/prompt.txt",
+      "provenance": "pixel-xing-tong/provenance.json"
+    },
+    {
+      "id": "azi",
+      "name": "阿梓",
+      "source": "pixel-azi/source-sheet.png",
+      "prompt": "pixel-azi/prompt.txt",
+      "provenance": "pixel-azi/provenance.json"
+    },
+    {
+      "id": "lian",
+      "name": "梨安 / 四禧丸子",
+      "source": "pixel-lian/source-sheet.png",
+      "prompt": "pixel-lian/prompt.txt",
+      "provenance": "pixel-lian/provenance.json"
+    },
+    {
+      "id": "mumu",
+      "name": "沐霂 / 四禧丸子",
+      "source": "pixel-mumu/source-sheet.png",
+      "prompt": "pixel-mumu/prompt.txt",
+      "provenance": "pixel-mumu/provenance.json"
+    },
+    {
+      "id": "tiandou",
+      "name": "恬豆 / 四禧丸子",
+      "source": "pixel-tiandou/source-sheet.png",
+      "prompt": "pixel-tiandou/prompt.txt",
+      "provenance": "pixel-tiandou/provenance.json"
+    },
+    {
+      "id": "youyi",
+      "name": "又一 / 四禧丸子",
+      "source": "pixel-youyi/source-sheet.png",
+      "prompt": "pixel-youyi/prompt.txt",
+      "provenance": "pixel-youyi/provenance.json"
+    },
+    {
+      "id": "wana",
+      "name": "莞儿 / EOE",
+      "source": "pixel-wana/source-sheet.png",
+      "prompt": "pixel-wana/prompt.txt",
+      "provenance": "pixel-wana/provenance.json"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+# Free Cur Linux x64 installer. Review before running; never run the whole script with sudo.
+set -Eeuo pipefail
+task_launch=1
+task_deps=1
+for task_arg in "$@"; do
+  case "$task_arg" in
+    --no-launch) task_launch=0 ;;
+    --no-deps) task_deps=0 ;;
+    --help|-h)
+      printf '%s\n' 'Free Cur · Linux x64 一键安装' \
+        '用法：bash install-linux.sh [--no-launch] [--no-deps]' \
+        '默认：检查依赖、校验下载包、安装当前用户切换器并打开；不会自动应用光标。' \
+        '--no-launch：仅安装，不打开窗口。 --no-deps：缺依赖时报错，不调用包管理器。' \
+        '请在自己的桌面终端执行，不要 sudo 整段脚本。'
+      exit 0 ;;
+    *) printf '不支持的参数：%s\n' "$task_arg" >&2; exit 2 ;;
+  esac
+done
+if [[ $(uname -s) != Linux || $(uname -m) != x86_64 ]]; then
+  printf '%s\n' '本脚本适用于 Linux x86_64（amd64），其他平台请在网站选择对应安装包。' >&2
+  exit 1
+fi
+if [[ $EUID -eq 0 ]]; then
+  printf '%s\n' '请使用桌面当前用户执行，不要 sudo 整段脚本，也不要在 root 会话安装。' >&2
+  exit 1
+fi
+task_python=/usr/bin/python3
+if [[ ! -x $task_python ]]; then task_python=$(command -v python3 || true); fi
+if [[ -z $task_python ]] || ! "$task_python" -c 'import sys, tkinter, ssl; assert sys.version_info >= (3,10)' 2>/dev/null; then
+  if [[ $task_deps -eq 0 ]]; then
+    printf '%s\n' '需要 Python 3.10+、Tkinter 与 HTTPS 支持。请安装 python3 / python3-tk 后重试。' >&2
+    exit 1
+  fi
+  if ! command -v sudo >/dev/null; then
+    printf '%s\n' '缺少依赖，且没有 sudo。请让管理员安装 Python 3.10+ 和 Tkinter；再用普通用户重试。' >&2
+    exit 1
+  fi
+  printf '%s\n' '需要安装 Python / Tkinter 依赖；仅这一步使用 sudo。'
+  if command -v apt-get >/dev/null; then
+    sudo apt-get update
+    sudo apt-get install -y python3 python3-tk ca-certificates
+  elif command -v dnf >/dev/null; then
+    sudo dnf install -y python3 python3-tkinter ca-certificates
+  elif command -v pacman >/dev/null; then
+    sudo pacman -S --needed python tk ca-certificates
+  elif command -v zypper >/dev/null; then
+    sudo zypper install -y python3 python3-tk ca-certificates
+  else
+    printf '%s\n' '未识别包管理器。请手动安装 Python 3.10+ 与 Tkinter 后重试。' >&2
+    exit 1
+  fi
+  task_python=/usr/bin/python3
+  "$task_python" -c 'import sys, tkinter, ssl; assert sys.version_info >= (3,10)' || {
+    printf '%s\n' '依赖仍不满足。需要 Python 3.10+，请先升级发行版或安装合适版本。' >&2
+    exit 1
+  }
+fi
+"$task_python" - "$task_launch" <<'FREECUR_PY'
+# @PAYLOAD@
+FREECUR_PY

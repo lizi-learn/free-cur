@@ -1,0 +1,135 @@
+[
+  {
+    "id": "taffy",
+    "name": "永雏塔菲",
+    "group": "塔菲",
+    "wiki": "永雏塔菲",
+    "color": "#ce9b50"
+  },
+  {
+    "id": "ava",
+    "name": "向晚",
+    "group": "A-SOUL",
+    "wiki": "向晚",
+    "color": "#dc7cab"
+  },
+  {
+    "id": "bella",
+    "name": "贝拉",
+    "group": "A-SOUL",
+    "wiki": "贝拉(虚拟UP主)",
+    "color": "#bf525f"
+  },
+  {
+    "id": "carol",
+    "name": "珈乐",
+    "group": "A-SOUL",
+    "wiki": "珈乐",
+    "color": "#9276c4"
+  },
+  {
+    "id": "diana",
+    "name": "嘉然",
+    "group": "A-SOUL",
+    "wiki": "嘉然",
+    "color": "#ee8d9a"
+  },
+  {
+    "id": "eileen",
+    "name": "乃琳",
+    "group": "A-SOUL",
+    "wiki": "乃琳",
+    "color": "#8c9ad2"
+  },
+  {
+    "id": "fiona",
+    "name": "心宜",
+    "group": "A-SOUL",
+    "wiki": "心宜",
+    "color": "#bd9ad1"
+  },
+  {
+    "id": "snow",
+    "name": "思诺",
+    "group": "A-SOUL",
+    "wiki": "思诺",
+    "color": "#7ea6cf"
+  },
+  {
+    "id": "luyou",
+    "name": "露早",
+    "group": "EOE",
+    "wiki": "露早",
+    "color": "#dc8bb5"
+  },
+  {
+    "id": "youn",
+    "name": "柚恩",
+    "group": "EOE",
+    "wiki": "柚恩",
+    "color": "#8cbd8e"
+  },
+  {
+    "id": "wana",
+    "name": "莞儿",
+    "group": "EOE",
+    "wiki": "莞儿",
+    "color": "#d2a263"
+  },
+  {
+    "id": "mino",
+    "name": "米诺",
+    "group": "EOE",
+    "wiki": "米诺高分少女",
+    "color": "#a78dd1"
+  },
+  {
+    "id": "yumo",
+    "name": "虞莫",
+    "group": "EOE",
+    "wiki": "虞莫",
+    "color": "#8da8d3"
+  },
+  {
+    "id": "xing-tong",
+    "name": "星瞳",
+    "group": "星瞳",
+    "wiki": "星瞳",
+    "color": "#9392dc"
+  },
+  {
+    "id": "azi",
+    "name": "阿梓",
+    "group": "阿梓",
+    "wiki": "阿梓",
+    "color": "#8d87c4"
+  },
+  {
+    "id": "lian",
+    "name": "梨安",
+    "group": "四禧丸子",
+    "wiki": "梨安",
+    "color": "#d18d80"
+  },
+  {
+    "id": "mumu",
+    "name": "沐霂",
+    "group": "四禧丸子",
+    "wiki": "沐霂",
+    "color": "#7aaea3"
+  },
+  {
+    "id": "tiandou",
+    "name": "恬豆",
+    "group": "四禧丸子",
+    "wiki": "恬豆",
+    "color": "#d5aa77"
+  },
+  {
+    "id": "youyi",
+    "name": "又一",
+    "group": "四禧丸子",
+    "wiki": "又一",
+    "color": "#b397ce"
+  }
+]

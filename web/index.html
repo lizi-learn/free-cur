@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="Free Cur，像素角色的指尖小世界。挑选喜欢的动态光标，带到 Windows、Linux 或 macOS。">
+ <meta name="theme-color" content="#faf8f4"><title>Free Cur · 喜欢，在指尖发生。</title>
+ <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/pixel.css"><link rel="stylesheet" href="/site.css?v=three-pages-1">
+ <script src="/app.js?v=three-pages-1" defer></script>
+</head>
+<body data-view="home">
+ <a class="skip" href="#library">跳到角色库</a>
+ <header class="site-header">
+  <a class="site-brand" href="#home" aria-label="Free Cur 首页"><span class="brand-cursor" aria-hidden="true">↖</span>free<span>cur</span><sup>FAN MADE</sup></a>
+  <nav class="site-nav" aria-label="主导航">
+   <a href="#home" data-view-link="home" aria-current="page"><span>01</span> 首页</a>
+   <a href="#library" data-view-link="library"><span>02</span> 角色库</a>
+   <a href="#install" data-view-link="install"><span>03</span> 下载使用</a>
+  </nav>
+  <button class="theme-switch" id="themeToggle" aria-label="切换深色主题">◐</button>
+ </header>
+ <main id="mainContent">
+  <section id="home" class="page-view home-view" aria-labelledby="heroTitle">
+   <div class="home-copy">
+    <p class="quiet-kicker"><span></span> SMALL CHARACTERS, LITTLE JOYS.</p>
+    <h1 id="heroTitle">喜欢，<br>在<span>指尖</span>发生<span class="title-dot">。</span></h1>
+    <p class="home-description">把熟悉的小角色，带进日常。<br>会眨眼，会挥手，陪你认真工作，也陪你发呆。</p>
+    <div class="home-actions"><a class="primary-action" href="#library">挑一只光标 <span aria-hidden="true">↗</span></a><button id="heroTry" class="plain-action">先试试嘉然 <span aria-hidden="true">↖</span></button></div>
+    <div class="home-footnote"><span><b id="totalCount">19</b> 位像素伙伴</span><i></i><span>Windows · Linux · macOS</span></div>
+   </div>
+   <div class="collectible" id="collectible" aria-label="立体角色展示台">
+    <div class="scene-light" aria-hidden="true"></div><div class="scene-floor" aria-hidden="true"></div>
+    <div class="scene-turn" id="sceneTurn">
+     <button class="satellite satellite-left" id="homePreviousCard" aria-label="切换到前一位角色"><img id="homePreviousImage" src="/previews/carol/Character-Hand.png" alt="" width="96" height="96"><span id="homePreviousName">珈乐</span></button>
+     <button class="satellite satellite-right" id="homeNextCard" aria-label="切换到后一位角色"><img id="homeNextImage" src="/previews/eileen/Character-Hand.png" alt="" width="96" height="96"><span id="homeNextName">乃琳</span></button>
+     <div class="display-case">
+      <div class="case-edge" aria-hidden="true"></div><div class="case-glint" aria-hidden="true"></div>
+      <span class="case-edition">FREE CUR / PIXEL EDITION</span><span class="case-number" id="homeNumber">05 / 19</span>
+      <button class="showpiece" id="homeShowpiece" aria-label="查看嘉然主题"><span class="sprite-shadow" aria-hidden="true"></span><img id="homeCharacterImage" src="/previews/diana/Character-Hand.gif" alt="嘉然像素角色" width="216" height="216"></button>
+      <div class="case-caption"><div><span id="homeCharacterGroup">A-SOUL</span><strong id="homeCharacterName">嘉然</strong></div><span class="theme-colour" id="homeCharacterColour" aria-label="角色主题色"></span></div>
+     </div>
+     <div class="pedestal-side" aria-hidden="true"></div><div class="pedestal-top" aria-hidden="true"></div><div class="pedestal-glow" aria-hidden="true"></div>
+    </div>
+    <div class="character-picker"><button id="homePrevious" aria-label="上一位角色">←</button><div id="homeCharacters" aria-label="快捷选择角色"></div><button id="homeNext" aria-label="下一位角色">→</button></div>
+    <p class="scene-hint">轻轻移动鼠标，或换一位伙伴。</p>
+   </div>
+   <div class="home-bottom"><p><span>✳</span> 小小的改变，刚刚好的快乐。</p><a href="#install">免费使用 · 随时恢复原光标 <span>↗</span></a></div>
+  </section>
+
+  <section id="library" class="page-view library-view library" hidden aria-labelledby="libraryTitle">
+   <div class="page-heading"><div><p class="quiet-kicker">02 / THE COLLECTION</p><h1 id="libraryTitle">今天，让谁陪你？<span>✳</span></h1></div><p>看看小动作，再带到你的桌面。</p></div>
+   <div class="style-tabs" hidden aria-label="主题版本"><button id="allTab" aria-pressed="true">全部角色 19</button><button id="pixelTab" aria-pressed="false">像素动态 <span id="pixelCount">19</span></button><button id="legacyTab" aria-pressed="false">头像版 <span id="legacyCount">0</span></button></div>
+   <div class="toolbar">
+    <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="找找你喜欢的角色…" autocomplete="off" aria-label="搜索主题"><kbd>/</kbd></label>
+    <button id="favoriteFilter" class="soft-button" aria-pressed="false">♡ 收藏 <span id="favoriteCount">0</span></button>
+    <label class="os-select">平台<select id="os" aria-label="下载平台"><option value="windows">Windows</option><option value="linux">Linux</option><option value="macos">macOS</option></select></label>
+    <label class="os-select">试用大小<select id="previewSize" aria-label="网页试用大小"><option value="64">64px</option><option value="96" selected>96px</option><option value="128">128px</option></select></label>
+   </div>
+   <div id="groups" class="groups" aria-label="主题分类"></div>
+   <div class="result-line"><p id="resultCount" role="status">正在加载角色…</p><span id="styleDescription">每只都不一样。</span></div>
+   <div id="grid" class="grid"></div><div id="empty" class="empty" hidden>没有找到。试试别的名字，或取消收藏筛选。</div>
+   <nav id="pagination" class="pagination" aria-label="角色库分页"></nav>
+   <details class="action-workbench"><summary>想看得更仔细？打开嘉然动作工作台 <span>＋</span></summary>
+    <div class="pixel-studio" aria-label="像素表情工作台">
+     <div class="studio-chrome"><span><i></i> DIANA / PIXEL STUDIO</span><span>功能精修版</span></div>
+     <div class="studio-modes"><button id="studioFunctional" aria-pressed="true">功能动作</button><button id="studioExpressions" aria-pressed="false">休闲表情</button><span>动作，为用途而画。</span></div>
+     <div class="studio-screen"><span class="screen-label">TASK KEYFRAMES / V2</span><img id="stageSprite" src="/previews/diana/Character-Hand.gif" alt="嘉然像素动态：点击" width="192" height="192"><div class="screen-caption"><strong id="moodTitle">伸出小手，轻轻点一下。</strong><span id="moodMeta">角色专用动作</span></div></div>
+     <div id="moodButtons" class="mood-buttons" aria-label="选择像素表情"></div>
+     <div class="studio-controls"><button id="pauseSprite" aria-pressed="false">暂停动画</button><label>放大<select id="pixelZoom" aria-label="像素预览倍率"><option value="144">3×</option><option value="192" selected>4×</option><option value="240">5×</option></select></label><span>AI 辅助设计 · 非官方</span></div>
+    </div>
+   </details>
+   <p class="collection-note">塔菲等 <span id="basicCount">18</span> 位伙伴为 8 姿势基础动态版；嘉然另有 48 张功能专用关键帧。网页试用不修改系统光标。</p>
+  </section>
+
+  <section id="install" class="page-view install-view install" hidden aria-labelledby="installTitle">
+   <div class="page-heading"><div><p class="quiet-kicker">03 / MAKE IT YOURS</p><h1 id="installTitle">下一步，带回桌面。</h1></div><p>选好平台。安装、挑选，然后应用。</p></div>
+   <div class="install-grid">
+    <article><span class="os-icon">⊞</span><h3>Windows <sup>2.5</sup></h3><p>自动识别分辨率与系统缩放，推荐更合适的光标大小。保留 HDR 偏白补偿。</p><a class="button primary" data-manager="windows_exe" href="#">下载 Windows 安装包 ↗</a><a class="minor-link" data-manager="windows" href="#">免安装 ZIP / 源码</a><small>Windows 10 / 11 x64 · .NET Framework 4.8+<br>自动推荐 · 可手选 32–128px</small></article>
+    <article><span class="os-icon">⌘</span><h3>Linux</h3><p>DEB 或一行命令安装。GNOME 可调大小，KDE 可切换主题。</p><a class="button light" data-manager="deb" href="#">下载 DEB ↗</a><a class="minor-link" data-manager="linux" href="#">其它发行版：免安装 ZIP</a><small>原生 Xcursor · 只修改当前用户<br>其它桌面可在系统设置中手动选择</small></article>
+    <article><span class="os-icon">◈</span><h3>macOS</h3><p>下载主题集，用 Mousecape 导入并应用 .cape 文件。</p><a class="button light" data-manager="macos" href="#">下载 macOS 主题集 ↗</a><a class="minor-link" href="https://github.com/alexzielenski/Mousecape/releases" target="_blank" rel="noopener noreferrer">获取 Mousecape</a><small>需要第三方 Mousecape<br>不需要关闭 SIP 或系统安全保护</small></article>
+   </div>
+   <div class="linux-oneclick"><div class="oneclick-heading"><div><p class="quiet-kicker">LINUX x64 / amd64</p><h3>也可以，只用一行命令。</h3></div><a href="/install-linux.sh" target="_blank" rel="noopener">先查看脚本 ↗</a></div><div class="command-row"><code id="linuxCommand">bash &lt;(curl -fsSL https://free-cur.bismih.cn/install-linux.sh)</code><button class="button primary" id="copyLinuxCommand">复制命令</button></div><p>在桌面终端运行，不要加 sudo。安装完成后在应用菜单打开 Free Cur；不会自动更换光标。</p></div>
+   <div class="install-assurance"><span>↶</span><p><strong>喜欢可以留下，改变也可以撤回。</strong>首次应用前备份原设置；云端下架不会强行替换桌面。无需强制自启动，不采集鼠标或屏幕。</p></div>
+   <details class="install-details"><summary>安装界面、兼容说明与安全细节 <span>＋</span></summary><div class="client-previews"><figure><img src="/client-preview/setup.png" alt="安装器离屏预览" loading="lazy"><figcaption>安装器：不自动修改光标。</figcaption></figure><figure><img src="/client-preview/manager.png" alt="角色切换器离屏预览" loading="lazy"><figcaption>切换器：自动识屏、原生尺寸、HDR 补偿与恢复。</figcaption></figure></div><p><strong>屏幕大小自动适配：</strong>默认自动推荐，结合当前窗口所在屏幕的物理像素和 Windows 缩放：1080p／100% 推荐 64px、1440p（2K）推荐 96px、4K 推荐 128px；高缩放取更大的档位，不重复相乘。也可手选 32／48／64／96／128px。每帧含对应尺寸，应用时精确选取，像素风保持硬边，不用平滑插值，也不凭空增加原画细节。多屏移动窗口会刷新推荐，点击主题应用后才生效；关闭软件后跨屏显示仍由 Windows 管理，不安装全局鼠标钩子。</p><p><strong>HDR 保持开启：</strong>安装 Windows 2.5，勾选「HDR 指针偏白补偿（实验）」，选好强度后重新应用主题。100% 为标准逆 sRGB 补偿；若过深可试 50%。默认关闭，只处理本地指针，不改整屏色彩、ICC 或 HDR 开关。原包、动画、透明度与热点保留不变。此功能尚待发生问题的 HDR 电脑实测，不代表通用色彩校准；混合 HDR / SDR 多屏需逐屏核对。</p><p>以上为 C# 离屏渲染，不是 Windows 实机截图。自动测试和格式校验已通过，Windows / macOS 真机安装、动画、高 DPI 与重新登录效果仍待验收。Windows 安装包未签名，请勿关闭系统安全保护。</p><p>云端只同步目录和素材，不执行远程指令、不静默更新 EXE。旧版软件需要下载新版安装包，「同步目录」不会升级程序。基础像素版与嘉然功能精修版的细节数量在主题详情中分别说明。</p></details>
+  </section>
+ </main>
+ <nav class="page-rail" aria-label="页面切换"><a href="#home" data-view-link="home" aria-current="page"><span>01</span> 首页</a><i></i><a href="#library" data-view-link="library"><span>02</span> 角色库</a><i></i><a href="#install" data-view-link="install"><span>03</span> 下载使用</a><b id="viewCounter">01 / 03</b></nav>
+ <footer class="site-footer"><p>FREE CUR · 非官方二创 / 免费非商业</p><div><a href="/about.html">关于与来源</a><a href="/terms.html">免责声明</a><a href="/privacy.html">隐私条款</a><a href="https://bismih.cn/" target="_blank" rel="noopener noreferrer">Bismih ↗</a></div></footer>
+ <dialog id="detail"><div class="dialog-header"><span>MEET YOUR LITTLE COMPANION</span><button id="closeDetail" class="icon-button" aria-label="关闭详情">×</button></div><div id="detailBody"></div></dialog>
+ <div id="trialBar" class="trial-bar" hidden><span id="trialName"></span><select id="trialMode" aria-label="试用光标状态" hidden></select><button id="endTrial">结束试用 <kbd>Esc</kbd></button></div>
+ <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

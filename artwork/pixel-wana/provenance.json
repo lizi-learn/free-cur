@@ -1,0 +1,10 @@
+{
+  "character": "wana",
+  "method": "AI-assisted pixel reinterpretation; not original official sprite art",
+  "tool": "built-in image_gen",
+  "source_reference": "../wana.png",
+  "generated_on": "2026-10-19",
+  "processing": "4x2 equal-cell slicing, largest connected character, 44px nearest-neighbor into 48px canvas, binary alpha, baseline 46, shared maximum 32-color palette",
+  "prompt": "prompt.txt",
+  "rights": "Character rights remain with the original rights holders. Unofficial noncommercial fan work."
+}
