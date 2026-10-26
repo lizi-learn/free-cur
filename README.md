@@ -7,6 +7,23 @@ Python / Tkinter 客户端、三平台主题生成器、静态预览网站和可
 [安装使用](https://free-cur.bismih.cn/#install) ·
 [MIT 代码许可](LICENSE) · [素材来源与权利说明](NOTICE.md)
 
+## 效果预览
+
+网站首页，可切换角色、在线试用并下载主题：
+
+![Free Cur 网站首页，展示塔菲像素动态角色](docs/images/website-home.jpg)
+
+实际生成的角色动画；桌面按系统光标状态播放，网页还提供页内点击试用：
+
+| 嘉然 · 链接选择动作 | 塔菲 · 等待状态动作 |
+| :---: | :---: |
+| <img src="docs/images/diana-hand.gif" alt="嘉然伸手动作循环" width="144" height="144"> | <img src="docs/images/taffy-wait.gif" alt="塔菲等待动作循环" width="144" height="144"> |
+
+Windows 2.5 切换器：主题选择、自动尺寸推荐、HDR 补偿与原光标恢复。
+下图为 **Mono 离屏开发预览，不是 Windows 真机截图**：
+
+![Free Cur Windows 切换器离屏预览](web/client-preview/manager.png)
+
 ## 功能
 
 - 19 套像素角色主题，15 类系统光标状态；同一套动画导出 Windows CUR / ANI、Linux Xcursor 和 macOS Mousecape `.cape`。

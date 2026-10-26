@@ -2,7 +2,8 @@
 
 The MIT license applies to the original Free Cur source code and project documentation.
 It does not grant rights to third-party characters, names, trademarks, reference
-illustrations or the character artwork under `artwork/` and in generated packages.
+illustrations or the character artwork under `artwork/`, the previews under
+`docs/images/` and `web/client-preview/`, and in generated packages.
 
 The pixel character sheets are AI-assisted, unofficial fan reinterpretations.
 They are not official sprites or a claim of an independent commercial license.
